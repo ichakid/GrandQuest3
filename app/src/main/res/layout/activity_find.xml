@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindActivity"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:paddingLeft="45dp">
+
+                <TextView
+                    android:layout_width="440dp"
+                    android:layout_height="match_parent"
+                    android:text="Find Item"
+                    android:id="@+id/findTitle"
+                    android:gravity="center_horizontal|top"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="50dp"
+                    android:textColor="#ff9e683e" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/closeButton"
+                    android:background="@drawable/close"
+                    android:layout_gravity="right|top" />
+
+            </GridLayout>
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="542dp"
+                android:layout_height="260dp"
+                android:numColumns="5"
+                android:stretchMode="columnWidth"
+                android:fastScrollAlwaysVisible="false"
+                android:gravity="center_horizontal|top"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_weight="2">
+            </GridView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <GridView
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/gridView2"
+                    android:fastScrollAlwaysVisible="false"
+                    android:numColumns="1"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find Item"
+                    android:id="@+id/findButton"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

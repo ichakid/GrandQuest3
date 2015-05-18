@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OfferActivity"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:paddingLeft="45dp">
+
+                <TextView
+                    android:layout_width="440dp"
+                    android:layout_height="match_parent"
+                    android:text="Offer Item"
+                    android:id="@+id/findTitle"
+                    android:gravity="center_horizontal|top"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="50dp"
+                    android:textColor="#ff9e683e" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/closeButton"
+                    android:background="@drawable/close"
+                    android:layout_gravity="right|top" />
+
+            </GridLayout>
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="542dp"
+                android:layout_height="231dp"
+                android:numColumns="5"
+                android:stretchMode="columnWidth"
+                android:fastScrollAlwaysVisible="false"
+                android:gravity="center_horizontal|top"
+                android:layout_gravity="center_horizontal|top">
+            </GridView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="378dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <TextView
+                    android:layout_width="189dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Offered Item"
+                    android:id="@+id/textView4"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="189dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Demanded Item"
+                    android:id="@+id/textView5"
+                    android:textSize="18dp"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="478dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemstooffer">
+
+                <NumberPicker
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberPicker" />
+
+                <GridView
+                    android:layout_width="220dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/gridView2"
+                    android:fastScrollAlwaysVisible="false"
+                    android:numColumns="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_gravity="center" />
+
+                <NumberPicker
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberPicker2"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="0dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offer Item"
+                    android:id="@+id/offeritemButton"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|center_horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

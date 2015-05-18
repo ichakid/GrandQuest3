@@ -1,0 +1,148 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/wm"
+        android:id="@+id/back">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="440dp"
+                        android:layout_height="wrap_content"
+                        android:text="Map"
+                        android:id="@+id/mapName"
+                        android:gravity="center_horizontal|top"
+                        android:textStyle="bold"
+                        android:textIsSelectable="false"
+                        android:textSize="50dp"
+                        android:textColor="#ff9e683e"
+                        android:layout_gravity="center_vertical" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:text="Current Time: "
+                            android:id="@+id/timeCurText"
+                            android:background="#fffdfffb"
+                            android:textSize="14dp"
+                            android:enabled="true"
+                            android:editable="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="20dp" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:text="Arrive Time: "
+                            android:id="@+id/timeArrText"
+                            android:background="#fffdfffb"
+                            android:textSize="14dp"
+                            android:enabled="true"
+                            android:editable="true"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <GridView
+                    android:layout_width="799dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/gridMap"
+                    android:numColumns="auto_fit"
+                    android:layout_gravity="center|left"
+                    android:gravity="center_vertical"
+                    android:fastScrollAlwaysVisible="false"
+                    android:layout_row="0"
+                    android:layout_column="17" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:text="Collect"
+                    android:id="@+id/collectButton"
+                    android:layout_gravity="center_horizontal|bottom" />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:text="Inventory"
+                    android:id="@+id/invButton"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:text="Find"
+                    android:id="@+id/findButton"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:text="Offer"
+                    android:id="@+id/offerButton"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:text="Tradebox"
+                    android:id="@+id/tBoxButton"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:text="Load Map"
+                    android:id="@+id/mapButton"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:text="Logout"
+                    android:id="@+id/logoutButton"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
+

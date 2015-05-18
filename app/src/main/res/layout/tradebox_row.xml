@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff8f3f7">
+
+        <GridView
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:id="@+id/gridView3"
+            android:layout_weight="2"
+            android:fastScrollAlwaysVisible="false"
+            android:numColumns="2"
+            android:horizontalSpacing="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/actButton"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Buy"
+            android:enabled="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/tokenRowTrbox"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</FrameLayout>

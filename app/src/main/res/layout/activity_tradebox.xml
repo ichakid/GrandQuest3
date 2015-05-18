@@ -1,0 +1,108 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="542dp"
+            android:layout_height="433dp"
+            android:background="#ffffffff"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="0dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:paddingLeft="45dp">
+
+                <TextView
+                    android:layout_width="440dp"
+                    android:layout_height="match_parent"
+                    android:text="Tradebox"
+                    android:id="@+id/tradeboxTitle"
+                    android:gravity="center_horizontal|top"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="50dp"
+                    android:textColor="#ff9e683e" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/closeButton"
+                    android:background="@drawable/close"
+                    android:layout_gravity="right|top" />
+
+            </GridLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="485dp"
+                android:layout_height="39dp"
+                android:dividerPadding="100dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="161dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Offered Item"
+                    android:id="@+id/textView"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:layout_width="161dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Demanded Item"
+                    android:id="@+id/textView2"
+                    android:layout_marginRight="0dp"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textColor="#FF000000" />
+
+                <TextView
+                    android:layout_width="161dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Action"
+                    android:id="@+id/textView3"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textColor="#FF000000" />
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:id="@+id/listView"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:dividerHeight="10dp"
+                android:smoothScrollbar="true"
+                android:divider="@android:color/transparent" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InventoryActivity"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:id="@+id/borderInventory">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:paddingLeft="45dp">
+
+                <TextView
+                    android:layout_width="440dp"
+                    android:layout_height="match_parent"
+                    android:text="Inventory"
+                    android:id="@+id/inventoryTitle"
+                    android:gravity="center_horizontal|top"
+                    android:textStyle="bold"
+                    android:textIsSelectable="false"
+                    android:textSize="50dp"
+                    android:textColor="#ff9e683e"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/closeButton"
+                    android:background="@drawable/close"
+                    android:layout_gravity="right|top" />
+
+            </GridLayout>
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="542dp"
+                android:layout_height="196dp"
+                android:numColumns="5"
+                android:stretchMode="columnWidth"
+                android:fastScrollAlwaysVisible="false"
+                android:gravity="center_horizontal|top"
+                android:layout_gravity="center_horizontal|top">
+            </GridView>
+
+            <TextView
+                android:layout_width="440dp"
+                android:layout_height="match_parent"
+                android:text="Mix Items"
+                android:id="@+id/mixTitle"
+                android:gravity="center_horizontal|top"
+                android:textStyle="bold"
+                android:textIsSelectable="false"
+                android:textSize="50dp"
+                android:textColor="#ff9e683e"
+                android:layout_marginTop="0dp" />
+
+            <GridView
+                android:layout_width="400dp"
+                android:layout_height="120dp"
+                android:id="@+id/gridView"
+                android:layout_weight="1"
+                android:numColumns="5"
+                android:layout_gravity="center_horizontal|bottom"
+                android:gravity="center_horizontal|bottom"
+                android:fastScrollAlwaysVisible="false"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:text="Mix"
+                android:id="@+id/mixButton"
+                android:layout_gravity="center"
+                android:textAlignment="gravity" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
